@@ -1,0 +1,18 @@
+{
+  "name": "multi-lp-events-optimism",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ saywhatdev/multi-lp-events-optimism",
+    "create-local": "graph create --node http://localhost:8020/ saywhatdev/multi-lp-events-optimism",
+    "remove-local": "graph remove --node http://localhost:8020/ saywhatdev/multi-lp-events-optimism",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 saywhatdev/multi-lp-events-optimism",
+    "test": "graph test"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.37.1",
+    "@graphprotocol/graph-ts": "0.28.1"
+  },
+  "devDependencies": { "matchstick-as": "0.5.0" }
+}
